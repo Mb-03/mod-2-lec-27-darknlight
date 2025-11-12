@@ -1,0 +1,12 @@
+export { default as Instagram } from "./instagram.svg";
+export { default as Facebook } from "./facebook.svg";
+export { default as Linkedin } from "./linkedin.svg";
+export { default as LightSwitcher } from "./lightSwitcher.svg";
+export { default as DarkSwitcher } from "./darkSwitcher.svg";
+export { default as Moon } from "./moon.svg";
+export { default as statistics } from "./statistics.svg";
+export { default as transfer } from "./transfer.svg";
+export { default as transactions } from "./transactions.svg";
+export { default as support } from "./support.svg";
+export { default as kyc } from "./kyc.svg";
+export { default as Mail } from "./mail.svg";

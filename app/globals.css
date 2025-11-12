@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* -------------------- Colors -------------------- */
+:root {
+  --background: #1a1a1e;
+  --text-primary: #ffffff;
+  --text-secondary: #9295a6;
+  --card-bg: #121318;
+  --card-dark-bg: #080808;
+  --border: #2a2b30;
+  --border-light: #ccced9;
+  --green-light: #26a17b;
+  --error: #a60303;
+  --text-gold: #dcb46c;
+  --navbar-bg: #121318;
+}
+
+.light {
+  --background: #f8f9fb;
+  --text-primary: #0a0a0a;
+  --text-secondary: rgb(0, 51, 255);
+  --card-bg: #f3f3f3;
+  --card-dark-bg: #f0f1f5;
+  --border: #d4d6dd;
+  --border-light: #c0c2ca;
+  --green-light: #26a17b;
+  --error: #d72638;
+  --text-gold: #d59a04;
+  --navbar-bg: #d59a04;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* -------------------- Theme mapping -------------------- */
+@theme inline {
+  --color-background: var(--background);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-card-bg: var(--card-bg);
+  --color-card-dark-bg: var(--card-dark-bg);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+  --color-green-light: var(--green-light);
+  --color-error: var(--error);
+  --color-text-gold: var(--text-gold);
+  --color-navbar-bg: var(--navbar-bg);
+}
+
+/* -------------------- Fonts -------------------- */
+@font-face {
+  font-family: "TBC";
+  src: url("/fonts/TBC-regular.TTF") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/fonts/noto-sans-dashboard.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* -------------------- Utilities -------------------- */
+@layer utilities {
+  .font-tbc {
+    font-family: "TBC", sans-serif;
+  }
+  .font-noto-sans {
+    font-family: "Noto Sans", sans-serif;
+  }
+}
+
+/* -------------------- Base -------------------- */
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: "TBC", sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
